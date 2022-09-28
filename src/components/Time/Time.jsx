@@ -6,13 +6,7 @@ class Time extends React.Component {
         this.state = {
             time: new Date().toLocaleTimeString(),
         }
-        this.activateLasers = this.activateLasers.bind(this);
     }
-
-    activateLasers () {
-        console.log("Laser activated");
-    }
-
     componentDidMount() {
         this.timerID = setInterval(() => {
             this.tick()
@@ -32,8 +26,7 @@ class Time extends React.Component {
     render() {
         return(
             <>
-            <p>{this.state.time}</p>
-            <button onClick={this.activateLasers}>Trigger Laser</button>
+            <h3>{this.state.time}</h3>
             </>
         )
     }
