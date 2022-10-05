@@ -13,7 +13,6 @@ const FancyButton = React.forwardRef((props, ref) => (
 
 const ref = React.createRef();
 <FancyButton ref={ref}>Click Me!</FancyButton>
-console.log(ref)
 
 const PracticeForwardingRefs = () => {
     return(

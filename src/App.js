@@ -7,6 +7,9 @@ import PracticeRef from './components/PracticeRef';
 import PracticeForwardingRefs from './components/PracticeForwardingRefs';
 import PracticeFragments from './components/PracticeFragments';
 import PracticeHOCs from './components/PracticeHOCs';
+import UncontrolledComponents from './components/UncontrolledComponents';
+import MouseTracker from './components/PracticeRenderProps';
+import Feed from './components/Feed';
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
       <PracticeForwardingRefs/>
       <PracticeFragments/>
       <PracticeHOCs/>
+      <UncontrolledComponents/>
+      <MouseTracker/>
+      <Feed/>
     </div>
   );
 }

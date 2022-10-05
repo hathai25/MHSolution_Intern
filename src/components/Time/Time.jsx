@@ -1,5 +1,7 @@
 import React from "react"
 
+//import { useState } from "react"
+
 class Time extends React.Component {
     constructor(props) {
         super(props)
@@ -26,11 +28,25 @@ class Time extends React.Component {
     render() {
         return(
             <>
-            <h3>{this.state.time}</h3>
+            <h3 style={{color: "red"}}>{this.state.time}</h3>
             </>
         )
     }
 
 }
+
+// const Time = () => {
+//     const [time, setTime] = useState(new Date().toLocaleTimeString())
+
+//     setInterval(() => {
+//         setTime(new Date().toLocaleTimeString())
+//     }, 1000)
+    
+//     return(
+//         <>
+//         <h3>{time}</h3>
+//         </>
+//     )
+// }
 
 export default Time

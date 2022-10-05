@@ -22,21 +22,22 @@ const PracticeFragments = () => {
     console.log(items.map(item => item.id))
     return(
         <table style={{width: "80%", margin: "auto", border: "1px", borderStyle: "solid"}}>
-            <tr style={{ border: "1px", borderStyle: "solid"}}>
-                {items.map(item => (
-                    <React.Fragment key={item.id}>
-                        <th style={{ border: "1px", borderStyle: "solid"}}>{item.term}</th>
-                    </React.Fragment>
-                ))}
-            </tr>
-            <tr style={{ border: "1px", borderStyle: "solid"}}>
-                {items.map(item => (
-                    <React.Fragment key={item.id}>
-                        <th style={{ border: "1px", borderStyle: "solid"}}>{item.description}</th>
-                    </React.Fragment>
-                ))}                    
-            </tr>
-            
+            <tbody>
+                <tr style={{ border: "1px", borderStyle: "solid"}}>
+                    {items.map(item => (
+                        <React.Fragment key={item.id}>
+                            <th style={{ border: "1px", borderStyle: "solid"}}>{item.term}</th>
+                        </React.Fragment>
+                    ))}
+                </tr>
+                <tr style={{ border: "1px", borderStyle: "solid"}}>
+                    {items.map(item => (
+                        <React.Fragment key={item.id}>
+                            <th style={{ border: "1px", borderStyle: "solid"}}>{item.description}</th>
+                        </React.Fragment>
+                    ))}                    
+                </tr>
+            </tbody>    
         </table>
     )
 }
